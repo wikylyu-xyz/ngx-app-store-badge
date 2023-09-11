@@ -35,3 +35,7 @@ Run **example**
 ```shell
 make example
 ```
+
+## Sceenshot
+
+![screenshot](https://raw.githubusercontent.com/wikylyu-xyz/ngx-app-store-badge/master/sceenshot/screenshot2.png)
