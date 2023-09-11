@@ -1,5 +1,5 @@
 {
-  "name": "app-store-badge",
+  "name": "ngx-app-store-badge",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

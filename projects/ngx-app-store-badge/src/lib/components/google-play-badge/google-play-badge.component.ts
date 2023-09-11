@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'lib-google-play-badge',
+  selector: 'ngx-google-play-badge',
   templateUrl: './google-play-badge.component.html',
   styleUrls: ['./google-play-badge.component.scss'],
 })
