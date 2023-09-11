@@ -3,5 +3,6 @@
   "dest": "../../dist/ngx-app-store-badge",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": ["@angular/common", "@angular/core"]
 }
