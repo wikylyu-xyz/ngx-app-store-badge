@@ -9,13 +9,14 @@
     width: fit-content;
     max-width: 100%;
 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
     ngx-google-play-badge,
-    ngx-app-store-badge {
-      display: block;
+    ngx-app-store-badge,
+    ngx-amazon-app-store-badge {
       width: 200px;
-    }
-    ngx-app-store-badge {
-      margin-top: 20px;
     }
   }
 }

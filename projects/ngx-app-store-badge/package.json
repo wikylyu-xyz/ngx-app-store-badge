@@ -1,7 +1,11 @@
 {
   "name": "ngx-app-store-badge",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wikylyu-xyz/ngx-app-store-badge.git"
+  },
   "peerDependencies": {
     "@angular/common": ">=16.2.0",
     "@angular/core": ">=16.2.0"
