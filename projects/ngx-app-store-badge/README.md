@@ -8,6 +8,18 @@ Mobile app download badge for
 
 ## Usage
 
+import **NgxAppStoreBadgeModule**
+
+```typescript
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxAppStoreBadgeModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+
 Set badge's width with css
 
 ```html
