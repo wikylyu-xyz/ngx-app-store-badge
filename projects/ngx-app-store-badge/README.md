@@ -13,7 +13,7 @@ import **NgxAppStoreBadgeModule**
 ```typescript
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, NgxAppStoreBadgeModule],
+  imports: [GooglePlayBadgeComponent, AppStoreBadgeComponent, AmazonAppStoreBadgeComponent, AndroidApkBadgeComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
@@ -32,6 +32,20 @@ Set badge's width with css
 
 ```html
 <ngx-app-store-badge light url="https://apps.apple.com/app/id6462862080" style="width:200px;display:block;margin-top:20px;"></ngx-app-store-badge>
+```
+
+## Example
+
+Build **ngx-app-store-badge**
+
+```shell
+make build
+```
+
+Run **example**
+
+```shell
+make example
 ```
 
 ## Sceenshot

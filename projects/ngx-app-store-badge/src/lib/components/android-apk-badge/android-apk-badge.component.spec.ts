@@ -6,10 +6,12 @@ describe('AndroidApkBadgeComponent', () => {
   let component: AndroidApkBadgeComponent;
   let fixture: ComponentFixture<AndroidApkBadgeComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [AndroidApkBadgeComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AndroidApkBadgeComponent]
+    })
+    .compileComponents();
+    
     fixture = TestBed.createComponent(AndroidApkBadgeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

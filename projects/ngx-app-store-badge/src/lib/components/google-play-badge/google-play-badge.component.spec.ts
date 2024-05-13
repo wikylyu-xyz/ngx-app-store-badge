@@ -6,10 +6,12 @@ describe('GooglePlayBadgeComponent', () => {
   let component: GooglePlayBadgeComponent;
   let fixture: ComponentFixture<GooglePlayBadgeComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [GooglePlayBadgeComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [GooglePlayBadgeComponent]
+    })
+    .compileComponents();
+    
     fixture = TestBed.createComponent(GooglePlayBadgeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

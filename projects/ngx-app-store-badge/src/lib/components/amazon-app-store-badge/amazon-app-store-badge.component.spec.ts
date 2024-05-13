@@ -6,10 +6,12 @@ describe('AmazonAppStoreBadgeComponent', () => {
   let component: AmazonAppStoreBadgeComponent;
   let fixture: ComponentFixture<AmazonAppStoreBadgeComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [AmazonAppStoreBadgeComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AmazonAppStoreBadgeComponent]
+    })
+    .compileComponents();
+    
     fixture = TestBed.createComponent(AmazonAppStoreBadgeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -28,7 +28,10 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/ngx-app-store-badge/tsconfig.spec.json",
-            "polyfills": ["zone.js", "zone.js/testing"]
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
           }
         }
       }
@@ -45,20 +48,29 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/example",
             "index": "projects/example/src/index.html",
-            "main": "projects/example/src/main.ts",
-            "polyfills": ["zone.js"],
+            "browser": "projects/example/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "projects/example/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/example/src/favicon.ico",
               "projects/example/src/assets"
             ],
-            "styles": ["projects/example/src/styles.scss"],
-            "scripts": []
+            "styles": [
+              "projects/example/src/styles.scss"
+            ],
+            "scripts": [],
+            "server": "projects/example/src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "projects/example/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -77,12 +89,9 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -91,10 +100,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "example:build:production"
+              "buildTarget": "example:build:production"
             },
             "development": {
-              "browserTarget": "example:build:development"
+              "buildTarget": "example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,27 +111,29 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "example:build"
+            "buildTarget": "example:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "projects/example/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/example/src/favicon.ico",
               "projects/example/src/assets"
             ],
-            "styles": ["projects/example/src/styles.scss"],
+            "styles": [
+              "projects/example/src/styles.scss"
+            ],
             "scripts": []
           }
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }

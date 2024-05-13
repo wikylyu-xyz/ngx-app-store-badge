@@ -1,11 +1,13 @@
-import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'ngx-app-store-badge',
+  standalone: true,
+  imports: [],
   templateUrl: './app-store-badge.component.html',
-  styleUrls: ['./app-store-badge.component.scss'],
+  styleUrl: './app-store-badge.component.css',
 })
-export class AppStoreBadgeComponent implements OnInit {
+export class AppStoreBadgeComponent {
   @Input() url = '';
   @Input('light') light: any;
 

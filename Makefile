@@ -6,3 +6,6 @@ build:
 
 example: build
 	ng s example
+
+publish: build
+	cd dist/ngx-app-store-badge && npm publish --access=public

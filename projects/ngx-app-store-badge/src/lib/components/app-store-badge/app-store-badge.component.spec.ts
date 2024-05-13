@@ -6,10 +6,12 @@ describe('AppStoreBadgeComponent', () => {
   let component: AppStoreBadgeComponent;
   let fixture: ComponentFixture<AppStoreBadgeComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [AppStoreBadgeComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppStoreBadgeComponent]
+    })
+    .compileComponents();
+    
     fixture = TestBed.createComponent(AppStoreBadgeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

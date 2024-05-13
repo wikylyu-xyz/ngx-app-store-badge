@@ -13,7 +13,7 @@ import **NgxAppStoreBadgeModule**
 ```typescript
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, NgxAppStoreBadgeModule],
+  imports: [GooglePlayBadgeComponent, AppStoreBadgeComponent, AmazonAppStoreBadgeComponent, AndroidApkBadgeComponent],
   providers: [],
   bootstrap: [AppComponent],
 })

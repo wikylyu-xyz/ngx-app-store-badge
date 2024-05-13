@@ -2,8 +2,10 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'ngx-amazon-app-store-badge',
+  standalone: true,
+  imports: [],
   templateUrl: './amazon-app-store-badge.component.html',
-  styleUrls: ['./amazon-app-store-badge.component.scss'],
+  styleUrl: './amazon-app-store-badge.component.css',
 })
 export class AmazonAppStoreBadgeComponent {
   @Input() url = '';
